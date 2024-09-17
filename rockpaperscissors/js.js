@@ -34,11 +34,6 @@ function shakeAnimation() {
   playerHand.onanimationend = () => {
     drawCheck();
   };
-
-  //   hvorfor køre funtion en extra gang nåt jeg bruger denne
-  //   playerHand.addEventListener("animationend", (event) => {
-  //     drawCheck();
-  //   });
 }
 
 function drawCheck() {
@@ -47,27 +42,18 @@ function drawCheck() {
   let randomNumber = Math.round(Math.random() * 2);
   computerGuesses = guesses[randomNumber];
 
-  console.log("Player choose", playerGuesses);
-  console.log("Computer Choose", computerGuesses);
   if (playerGuesses !== computerGuesses) {
     if (playerGuesses === "rock" && computerGuesses === "scissors") {
-      console.log("Player Wins");
       winningText.classList.remove("hidden");
-
-      console.log("player Wins");
     } else if (playerGuesses === "paper" && computerGuesses === "rock") {
       winningText.classList.remove("hidden");
-      console.log("player wins");
     } else if (playerGuesses === "scissors" && computerGuesses === "paper") {
       winningText.classList.remove("hidden");
-      console.log("player wins");
     } else {
       losingText.classList.remove("hidden");
-      console.log("computer loses");
     }
   } else {
     drawText.classList.remove("hidden");
-    console.log("it,s a draw");
   }
   playerHand.classList.add(playerGuesses);
   computerHand.classList.add(computerGuesses);
