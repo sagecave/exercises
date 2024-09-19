@@ -34,6 +34,11 @@ function shakeAnimation() {
   playerHand.onanimationend = () => {
     drawCheck();
   };
+  //   playerHand.addEventListener("animationend", () => {
+  //     console.log("happy");
+  //     drawCheck();
+  //   });
+  // }
 }
 
 function drawCheck() {
@@ -43,11 +48,7 @@ function drawCheck() {
   computerGuesses = guesses[randomNumber];
 
   if (playerGuesses !== computerGuesses) {
-    if (playerGuesses === "rock" && computerGuesses === "scissors") {
-      winningText.classList.remove("hidden");
-    } else if (playerGuesses === "paper" && computerGuesses === "rock") {
-      winningText.classList.remove("hidden");
-    } else if (playerGuesses === "scissors" && computerGuesses === "paper") {
+    if ((playerGuesses === "rock" && computerGuesses === "scissors") || (playerGuesses === "paper" && computerGuesses === "rock") || (playerGuesses === "scissors" && computerGuesses === "paper")) {
       winningText.classList.remove("hidden");
     } else {
       losingText.classList.remove("hidden");
