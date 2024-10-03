@@ -18,35 +18,29 @@ const owned = document.querySelector(".ownedButton");
 const eletric = document.querySelector(".eletricButton");
 const tandemm = document.querySelector(".tandemButton");
 
-reset.addEventListener("click", resetYay);
-eletric.addEventListener("click", isVehicleElectric);
-stopp.addEventListener("click", stopFun);
-owned.addEventListener("click", ownedFun);
-tandemm.addEventListener("click", tandemFun);
-
-function resetYay() {
+reset.addEventListener("click", () => {
   showTheseVehicles(vehicles);
-}
-function isVehicleElectric() {
+});
+eletric.addEventListener("click", () => {
   filtered = vehicles.filter((data) => data.isElectric);
 
   showTheseVehicles(filtered);
-}
-function stopFun() {
+});
+stopp.addEventListener("click", () => {
   filtered = vehicles.filter((data) => data.stops);
 
   showTheseVehicles(filtered);
-}
-function ownedFun() {
+});
+owned.addEventListener("click", () => {
   filtered = vehicles.filter((data) => data.ownedBy);
 
   showTheseVehicles(filtered);
-}
-function tandemFun() {
+});
+tandemm.addEventListener("click", () => {
   filtered = vehicles.filter((data) => data.isTandem);
 
   showTheseVehicles(filtered);
-}
+});
 
 function showTheseVehicles(arr) {
   tbodyPointer.innerHTML = " ";
@@ -59,7 +53,7 @@ function showTheseVehicles(arr) {
   ${each.stops ? `<td>${each.stops}</td>` : `<td> :D</td>`}
   ${each.ownedBy ? `<td>${each.ownedBy}</td>` : `<td> :D</td>`}
   ${each.isElectric ? `<td>Yes</td>` : `<td> :D</td>`}
-  ${each.isTandem ? `<td>${each.isTandem}</td>` : `<td> :D</td>`}
+  ${each.isTandem ? `<td>Yes</td>` : `<td> :D</td>`}
 
 
 </tr>`;
