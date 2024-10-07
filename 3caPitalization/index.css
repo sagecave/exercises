@@ -29,3 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     }
+
+    span{
+        background-color: rgb(53, 82, 50);
+    }
