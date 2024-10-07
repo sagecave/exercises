@@ -56,6 +56,9 @@ body[data-theme="hawaii"]{
     --main_bg_col: rgb(4, 147, 4);
     --p_col:rgb(171, 239, 23);
     --head_col:rgb(216, 216, 216);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    p{border: solid red 2px;}
 }
 body[data-theme="dark"]{
     --footer_bg_col: rgb(0, 0, 0);
@@ -63,11 +66,13 @@ body[data-theme="dark"]{
     --main_bg_col: rgb(24, 24, 24);
     --p_col:rgb(212, 212, 212);
     --head_col:rgb(213, 213, 213);
+    font-family: 'Times New Roman', Times, serif;
 }
 body[data-theme="light"]{
     --footer_bg_col: rgb(234, 233, 233);
     --header_bg_col: rgb(234, 234, 234);
     --main_bg_col: rgb(218, 218, 218);
-    --p_col:rgb(23, 23, 23);
-    --head_col:rgb(23, 23, 23);
+    --p_col:rgb(23, 47, 156);
+    --head_col:rgb(15, 66, 218);
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
