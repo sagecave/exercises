@@ -1,0 +1,14 @@
+:root{
+    --color:200;
+    --length:3rem;
+}
+
+div{
+    background: hsl(var(--color), 80%, 40%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height:var(--length);
+
+}

@@ -1,0 +1,35 @@
+button{
+    padding: 2rem 4rem;
+    
+    border-radius: 16px;
+    border: solid rgb(251, 251, 209) 2px;
+    font-size: 1.5rem;
+    background:linear-gradient(to left, rgb(164, 250, 114) 50%, lightblue 50%) right ;
+    background-size: 200%;
+    transition: .5s ease-out;
+    animation: fillColor 5s ;
+
+
+
+}
+
+
+
+
+/* button:hover{
+    background-color: antiquewhite;
+} */
+
+
+@keyframes fillColor{
+    0%{
+        background-position: right;
+       
+      
+    }
+    100%{
+        background-position: left;
+      
+      
+    }
+}

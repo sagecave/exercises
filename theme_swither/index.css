@@ -5,9 +5,9 @@
 }
 
 :root{
-    --header_bg_col: rgb(233, 211, 232);
-    --main_bg_col: rgb(105, 116, 105);
-    --footer_bg_col: rgb(58, 55, 53);
+    --header_bg_col: rgb(224, 12, 213);
+    --main_bg_col: rgb(12, 249, 12);
+    --footer_bg_col: rgb(215, 92, 9);
     --p_col:white;
     --head_col:white;
 }
