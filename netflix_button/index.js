@@ -6,3 +6,9 @@ console.log(button.onanimationend);
 button.addEventListener("animationend", () => {
   body.style.background = "blue";
 });
+
+button.addEventListener("click", () => {
+  console.log("click");
+  button.classList.remove("animation");
+  body.style.background = "blue";
+});
